@@ -74,6 +74,7 @@ Throughout the implementation, several initial AI suggestions were consciously m
 ### K. Automated Swagger UI CSRF Interceptor (Development / Staging)
 - **My Decision**: Configured Swagger UI in `main.ts` with a `requestInterceptor` in non-production environments that automatically injects `X-Requested-With: XMLHttpRequest` into every interactive API request, allowing developers to test endpoints seamlessly without manually bypassing CSRF guards.
 
+
 ### L. Modular, Feature-Based Vue Frontend Structure
 - **AI Suggestion**: The default Vite scaffold and typical generated Vue code put the form markup, validation rules, API calls and shared UI into a few large flat files. That works for a demo but becomes hard to read and change.
 - **My Decision**: I organized `frontend/src` by responsibility and by feature, so each file has one reason to change:
