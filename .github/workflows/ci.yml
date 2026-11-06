@@ -9,7 +9,7 @@ on:
 jobs:
   backend-test:
     name: Backend Lint, Test & E2E
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     services:
       mongodb:
